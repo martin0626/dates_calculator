@@ -1,0 +1,175 @@
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  color: #333;
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+
+
+body{
+  
+  background-image: url('https://images.pexels.com/photos/912110/pexels-photo-912110.jpeg?cs=srgb&dl=pexels-elia-clerici-282848-912110.jpg&fm=jpg'); /* URL of the background image */
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center center; /* Centers the image in the container */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainElement {
+  background-color: #fff;
+  padding: 6rem;
+  border-radius: 6px;
+  max-width: 72rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  box-shadow: 1px 0px 6px 1px #33333388;
+  margin-inline: 2rem;
+}
+
+
+
+
+header{
+  margin-bottom: 4rem;
+}
+
+header > p {
+  padding: 2rem;
+  color: #333333d8;
+  font-size: 1.2rem;
+}
+
+.formElment {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 22rem;
+  margin: 0 auto;
+}
+
+.singleInput {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.singleInput > label {
+  align-self: self-start;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.inputELement {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 1px 0px 6px 1px #3333335d;
+  font-size: 1.2rem;
+}
+
+.btnCustom {
+  padding: 1rem 2rem;
+  border: none;
+  background-color: skyblue;
+  border-radius: 4px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.btnCustom:hover {
+  cursor: pointer;
+  background-color: rgba(135, 207, 235, 0.701);
+  transform: scale(105%);
+}
+
+.errMsg {
+  color: rgb(229, 0, 0);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+/* Instructions */
+
+.instructions{
+  margin-top: 2rem;
+  transition: all 1s;
+}
+
+.instructions-btn{
+  font-size: 1.2rem;
+  border: 1px solid #33333363;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+
+.instructions-btn:hover{
+  background-color: rgba(135, 207, 235, 0.226);  
+  cursor: pointer;
+}
+
+.instructions-main {
+  padding: 2rem;
+  width: 80%;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+  gap: 1rem;
+  box-shadow: 1px 0px 6px 1px #3333335d;
+  border-radius: 8px;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.hidden{
+  height: 0px;
+  padding: 0;
+  opacity: 0;
+  transition: all 0.5s;
+  animation: hidden 1s ease-in-out;
+}
+
+
+.instructions-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+  transition: all 0.5s;
+}
